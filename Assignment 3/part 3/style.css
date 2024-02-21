@@ -44,34 +44,119 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
-h1, h2 {
-  letter-spacing: 0.30rem;
-  font-family: 'EB Garamond', serif;
+@font-face {
+  font-family: 'bree_serifregular';
+  src: url('fonts/breeserif-regular-webfont.woff2') format('woff2'),
+       url('fonts/breeserif-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'alfa_slab_oneregular';
+  src: url('fonts/alfaslabone-regular-webfont.woff2') format('woff2'),
+       url('fonts/alfaslabone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'bree_serifregular';
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+}
+
+h1, h2 {
+  font-family: 'alfa_slab_oneregular';
+  font-weight: 100;
+}
+
 h1 {
   font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
+
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
 }
-p {
-  font-size: 1.5em;
-  line-height: 1.7;
+
+section h2 + p {
+  text-indent: 2rem;
 }
-a:link {
-  color: rgb(12, 102, 105);
+
+
+
+a {
+  color: #de1f1f;
+  outline: none;
 }
-a:hover, a:focus {
-  color: rgb(99, 75, 23);
+
+a[href*="http"] {
+  background: url('external-link-52.png') no-repeat 100%;
+  background-size: 1rem;
+  background-position: bottom 0.5rem right;
+  padding-right: 1.2rem;
+}
+
+a:hover,
+a:focus {
+  color: #54b8b8;
   text-decoration: none;
 }
 
-a:visited {
-  color:rgb(90, 52, 52);
+a:active {
+  background: #296767;
+  color: white;
+  text-decoration: none;
 }
-a:focus {
-  outline: none;
+
+li, p {
+  line-height: 1.5;
 }
-li {
-  line-height: 1.7;
+ul, p {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+ul {
+  list-style-type: square;
+}
+ul li::marker {
+  color: #0707cc;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #140e84;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #070d0d;
+  border: 1px solid #296767;
+}
+
+nav a:active {
+  background: #296767;
+  color: white;
+  border: 1px solid #296767;
 }
