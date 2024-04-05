@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 
 nav, article, footer, .secondary {
-  background-color: #B7E4C7;
+  background-color: #fefffe;
 }
 
 article, footer, .secondary {
@@ -144,7 +144,7 @@ footer {
 
 table {
   width: 100%;
-  background-color: #004D38;
+  background-color: #13ae8a;
   color: #FFFFFF;
   border-collapse: collapse;
   border: 1px solid #081C15;
